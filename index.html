@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Freak</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+   
+    body {
+        /* reset */
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        display: block;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .left img {
+        width: 60px;
+        border-radius: 100%;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 34%;
+        margin: 12px auto;
+    }
+
+    .navbarr {
+        display: inline-block;
+    }
+
+    .navbarr li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbarr li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+    }
+
+    .navbarr li a:hover,
+    .navbarr li a.active {
+        text-decoration: underline;
+        color: rgb(209, 212, 178);
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        /* background-color: bisque; */
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: #0a1624;
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid gray;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .btn:hover {
+        color: rgb(209, 212, 178);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+        font-family: "Ubuntu", sans-serif;
+        border: 2px solid white;
+        margin: 80px 20px;
+        padding: 20px;
+        width: 35%;
+        border-radius: 50px;
+        color: rgb(209, 212, 178);
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 330px;
+        padding: 5px;
+        font-size: 15px;
+        /* border: 2px solid springgreen; */
+        margin: 15px auto;
+        border-radius: 5px;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .container button {
+        display: block;
+        width: 30%;
+        margin: auto;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="/logo.jpg" alt="">
+            <div>GYM Freak</div>
+        </div>
+        <!-- navbar -->
+        <div class="mid">
+            <ul class="navbarr">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- search -->
+        <div class="right">
+            <button class="btn">SignUp</button>
+            <button class="btn">Login</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of the city NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
